@@ -15,10 +15,25 @@ jobs:
       with:
         args: "bundle"
 
+    - name: Create info file
+      run: |
+        echo -e "ref: $GITHUB_REF \ncommit: $GITHUB_SHA\nbuild: $(date +"%Y-%m-%dT%H:%M:%SZ")" \
+        > build/info.txt
+
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3
       with:
         # Artifact name
-        name: docs.techne.net UI bundle
+        name: Antora UI bundle
         # A file, directory or wildcard pattern that describes what to upload
         path: build/ui-bundle.zip
+
+    - name: Update nightly release
+      uses: pyTooling/Actions/releaser@r0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        tag: nightly
+        rm: true
+        files: |
+          build/ui-bundle.zip
+          build/info.txt
