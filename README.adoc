@@ -6,7 +6,7 @@
 :url-project: https://github.com/shampeon/antora-ui
 :url-preview: https://.io/antora-ui
 :url-ci-pipelines: {url-project}/actions/workflows
-:img-ci-status: {url-project}/actions/workflows/bundle/badge.svg
+:img-ci-status: {url-project}/actions/workflows/bundle.yaml/badge.svg
 // External URLs:
 :url-antora: https://antora.org
 :url-antora-docs: https://docs.antora.org
