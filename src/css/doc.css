@@ -748,6 +748,7 @@
 
 .doc .sidebarblock {
   background: var(--sidebar-background);
+  border-color: var(--panel-border-color);
   border-radius: 0.75rem;
   padding: 0.75rem 1.5rem;
 }
