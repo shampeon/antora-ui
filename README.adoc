@@ -21,7 +21,7 @@
 
 image:{img-ci-status}[CI Status (GitHub CI), link={url-ci-pipelines}]
 
-This project is a custom {url-antora-docs}[Antora] https://docs.antora.org/antora-ui-default/[UI] for docs.techne.net, the demo site for Ian Evans work as a technical writer.
+This project is a custom {url-antora-docs}[Antora] https://docs.antora.org/antora-ui-default/[UI] for https://docs.techne.net[docs.techne.net], the demo site for Ian Evans work as a technical writer.
 
 == Development Quickstart
 
