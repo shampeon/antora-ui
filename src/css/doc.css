@@ -74,6 +74,10 @@
   font-weight: var(--alt-heading-font-weight);
 }
 
+.doc h3:not(.discrete) {
+  border-bottom: 0.75px solid var(--section-divider-color);
+}
+
 .doc h1 .anchor,
 .doc h2 .anchor,
 .doc h3 .anchor,
@@ -115,6 +119,8 @@
 
 .doc a {
   color: var(--link-font-color);
+  text-decoration: underline;
+  text-decoration-style: dotted;
 }
 
 .doc a:hover {

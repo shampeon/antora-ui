@@ -88,7 +88,7 @@
   --alt-heading-font-weight: var(--body-font-weight-bold);
   --section-divider-color: var(--panel-border-color);
   --link-font-color: var(--color-cream);
-  --link_hover-font-color: #104d92;
+  --link_hover-font-color: var(--important-color);
   --link_unresolved-font-color: var(--important-color);
   --abstract-background: var(--color-dark-brown);
   --abstract-font-color: var(--color-cream);
